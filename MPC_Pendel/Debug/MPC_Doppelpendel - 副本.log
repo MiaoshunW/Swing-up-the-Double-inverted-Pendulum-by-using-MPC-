@@ -1,0 +1,51 @@
+﻿Build started 2019/6/27 1:46:27.
+     1>Project "C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\MPC_Doppelpendel - 副本.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (MPC_Pendel_nested.vcxproj, MPC_Pendel.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt /FS src\MPC_Doppelpendel.cpp
+         MPC_Doppelpendel.cpp
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(87): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(88): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(89): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(90): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(91): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(92): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(93): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(96): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(116): warning C4101: 'alpha' : unreferenced local variable
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(338): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(339): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(340): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(341): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(342): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(343): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(344): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(348): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(868): warning C4129: ' ' : unrecognized character escape sequence
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(958): warning C4129: ' ' : unrecognized character escape sequence
+     1>c:\users\miaoshunwu\desktop\mpc invert pendulum\mpc_pendel\src\mpc_doppelpendel.cpp(1114): warning C4129: ' ' : unrecognized character escape sequence
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\\Debug32\MPC_Doppelpendel.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\\lib32" libworhp.lib TransWORHP.lib SDL2.lib SDL2main.lib opengl32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\Debug32\MPC_Doppelpendel.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\Debug32\MPC_Doppelpendel.lib" /MACHINE:X86 /SAFESEH:NO Debug\MPC_Doppelpendel.obj
+            Creating library C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\Debug32\MPC_Doppelpendel.lib and object C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\Debug32\MPC_Doppelpendel.exp
+         MPC_Doppelpendel - 副本.vcxproj -> C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\Debug32\MPC_Doppelpendel.exe
+     1>Done Building Project "C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\MPC_Doppelpendel - 副本.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.85

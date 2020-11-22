@@ -1,0 +1,54 @@
+﻿Build started 2019/12/6 16:15:12.
+     1>Project "C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\MPC_Doppelpendel.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (MPC_Pendel_nested.vcxproj, MPC_Pendel.vcxproj, Test.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt /FS src\MPC_Doppelpendel.cpp
+         MPC_Doppelpendel.cpp
+     1>src\MPC_Doppelpendel.cpp(83): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(84): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(85): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(86): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(87): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(88): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(89): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(92): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(111): warning C4101: 'alpha' : unreferenced local variable
+     1>src\MPC_Doppelpendel.cpp(354): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(355): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(356): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(357): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(358): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(359): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(360): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(364): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>src\MPC_Doppelpendel.cpp(887): warning C4129: ' ' : unrecognized character escape sequence
+     1>src\MPC_Doppelpendel.cpp(978): warning C4129: ' ' : unrecognized character escape sequence
+     1>src\MPC_Doppelpendel.cpp(1137): warning C4129: ' ' : unrecognized character escape sequence
+     1>src\MPC_Doppelpendel.cpp(731): warning C4101: 'dummy' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\\Release32\MPC_Doppelpendel.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\\lib" libworhp.lib TransWORHP.lib SDL2.lib SDL2main.lib opengl32.lib clib32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\Release32\MPC_Doppelpendel.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\Release32\MPC_Doppelpendel.lib" /MACHINE:X86 /SAFESEH:NO Release\MPC_Doppelpendel.obj
+            Creating library C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\Release32\MPC_Doppelpendel.lib and object C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\Release32\MPC_Doppelpendel.exp
+         Generating code
+         Finished generating code
+         MPC_Doppelpendel.vcxproj -> C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\Release32\MPC_Doppelpendel.exe
+     1>Done Building Project "C:\Users\MiaoshunWu\Desktop\MPC Invert pendulum\MPC_Pendel\MPC_Doppelpendel.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.51

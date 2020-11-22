@@ -1,0 +1,57 @@
+1.)	Einen gemeinsamen Folder mit beiden Pendelmodellen („echt“ und mit Modellfehler für Optimierung) bekomme ich nicht zum Laufen. Eine Möglichkeit zeigt 8.cpp. Dagegen 2 Folder mit je einem Pendelmodell funktionieren, s. 7.cpp. Ist das so gewollt? .Add klingt irgendwie, als ob ein Folder auch mehrere Modelle verwalten können sollte.
+
+Folder.add mehrfach --> alle gleichzeitig optimieren, d.h. richtig so
+
+2.)	Ich weiß nicht mehr genau, wozu Warmstart() benötigt wurde, das Programm 7.cpp läuft (jetzt) auch ohne. Dagegen folder.Reinit() habe ich neu hinzugefügt, das wird zwingend benötigt, da sonst die Startwerte nicht neu übernommen werden. Das mag an der 2-Folderstruktur liegen, innerhalb eines Folders war das anscheinend nicht nötig.
+
+Matthias schreibt neue Reinit-Funktion für uns
+
+3.)	Bei der MPC wäre ein deutlicher Geschwindigkeitszuwachs zu erwarten, wenn die im letzten Schritt als optimal ermittelte Steuerfolge und Trajektorie entsprechend zeitversetzt in die Initialisierung übernommen wird. Aber die diskreten Zeitpunkte der letzten Optimierung landen im allgemeinen nicht auf den diskreten Zeitpunkten der nächsten Optimierung. Man bräuchte also die Systemzustände zwischen den letzten diskreten Schritten und kann die Steuerfolge auch gar nicht richtig abbilden. Trotzdem muss man doch etwas Besseres machen können, als jedesmal ganz dumm von vorne anzufangen. Fällt dir dazu etwas ein?
+
+Wahrscheinlich kein großer Zuwachs. Lineare Interpolation ausprobieren.
+
+4.)	Du sagtest, obj muss zwischen 0 und 1 liegen, obwohl das nicht in der Doku steht. Das hab ich berücksichtigt. Mache ich obj absichtlich 10000x so groß, läuft das Programm aber trotzdem, und auch die Regelung funktioniert. Die Ergebnisse sind nur leicht anders. War das so zu erwarten?
+
+Messbare Effekte erst bei 10^xy zu erwarten. Eigentlich auch Begrenzungen normieren, aber aus gleichem Grund keine Verbesserung zu erwarten
+
+5.) Ich hab herausgefunden, dass Verwendung der diff-Strukturen den Gesamterfolg verlangsamen und damit verschlechtern! Wie kann das sein?
+
+Genauigkeit in WORHP.xml zu hoch eingestellt. Tol... (ganz oben) für Optimierung auf 10^-3 ausprobieren.
+
+6.) Laut Ausgabe wird WORHP.XML jedesmal neu geladen. Kann man das abstellen?
+
+s. 2.)
+
+7.) Eine völlig ausgabefreie Version würde vielleicht auch noch ein wenig Zeit sparen.
+
+ggf. SILENT-mode in neuem TransWORHP
+
+---
+
+8.) Eine äußere Schleife, die mit WORHP die Wahl der diskreten Zeitpunkte optimieren soll, scheitert an der stochastischen Natur des Ergebnis. Kann man WORHP dagegen resistent machen?
+
+nein, selber Schleife zur gerasterten Optimierung wählen.
+
+9.) Man sieht, dass die von WORHP ausprobierten Abstände zu klein sind. Kann man das anpassen?
+
+s. 8.)
+
+10.) Sowohl das Überschreiten der Wagenstrecke (Box constraint) als auch eine verdrehte Zeitpunkt-Reihenfolge (Linear Constraint) scheinen u.U. möglich. Wie kann man einzelne Constraints als unverletztbar markieren?
+
+Fehler gefunden, nochmal probieren
+
+
+Außerdem:
+
+Optimierungskriterium verbessern
+- Geschwindigkeit egal
+- doch nur letzter Punkt
+
+Matthias den Code schicken, mit Output, erledigt
+
+int step() /override {
+	if(1) // zeitabfrage
+		return true;
+	else
+		return false;
+}

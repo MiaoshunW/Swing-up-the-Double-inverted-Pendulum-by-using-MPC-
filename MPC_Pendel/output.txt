@@ -1,0 +1,765 @@
+  TransWORHP | -------------------------------------------------------
+  TransWORHP |  This is TransWORHP 0.1-r13701b4, the OCP solver for WORHP,
+  TransWORHP |          developed by University of Bremen.
+  TransWORHP | -------------------------------------------------------
+  TransWORHP | Using Trapez discretization
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+     Hessian | (structure=3) Using ode blocks
+     Hessian | (values=0) Calculating 2nd derivative of F + mu*G
+       WORHP | No Wongle found at USB port
+       WORHP | Opened license file worhp.lic
+       WORHP | This module 'worhp' is licensed for versions <= 2.0 to:
+       WORHP |    Jochen Sch├╝ttler
+       WORHP |    University of Bremen
+       WORHP |    on host 'office PC' until 04.09.2018
+       WORHP |  LICENSED FOR NON-PROFIT, ACADEMIC OR INSTRUCTIONAL USE.
+           | |  YOU ARE NOT PERMITTED TO EXPLOIT THIS LICENSE COMMERCIALLY.
+           | |
+       CHECK | Check NLP Constraints
+       WORHP |
+       WORHP | -------------------------------------------------------
+       WORHP |   This is WORHP 1.9-7a4108b, the European NLP-solver.
+       WORHP |    Use of WORHP is subject to terms and conditions.
+       WORHP |     Visit http://www.worhp.de for more information.
+       WORHP | -------------------------------------------------------
+       WORHP |
+       WORHP | Total number of variables ........................       36
+       WORHP |                    variables with lower bound only        0
+       WORHP |               variables with lower and upper bound       31
+       WORHP |                    variables with upper bound only        0
+       WORHP | Total number of box constraints ..................       62
+       WORHP | Total number of other constraints ................       25
+       WORHP |                               equality constraints       25
+       WORHP |       inequality constraints with lower bound only        0
+       WORHP |  inequality constraints with lower and upper bound        0
+       WORHP |       inequality constraints with upper bound only        0
+       WORHP |
+       WORHP | Gradient (FD ct)  36/36  = 100.000%
+       WORHP | Jacobian (FD ct) 300/900 =  33.333%  (12 groups)
+       WORHP | Block BFGS with intersections (1-3)
+       WORHP |
+       WORHP | Algorithm    Sequential Quadratic Programming
+       WORHP | NLP Method   Filter                QP Method     Interior-Point
+       WORHP | NLP MaxIter  10000                 QP MaxIter    500
+       WORHP | LA solver    MA97 (tol 1.0E-09, ref 10, ord METIS/AMD, scl none)
+       WORHP |
+       WORHP | Tolerances:
+       WORHP | Optimality  (sKKT)   1.00E-06 (1.0E-03)   IP ComTol    2.00E-07
+       WORHP | Feasibility          1.00E-06 (1.0E-03)   IP ResTol    4.00E-08
+       WORHP | Complementarity      1.00E-03
+       WORHP |
+       WORHP | Timeout              1800.000  seconds
+       WORHP |
+       WORHP |      ITER           OBJ               CON              sKKT        FLAGS   A
+       WORHP | [    0|  10]  2.3482569828E-01  5.3210266234E+01  2.1565405278E-02  Bin  0.0
+       WORHP | [    1|  19]  3.2015680720E-01  4.4377587127E+01  5.0569441471E+02  Bin  1.0
+       WORHP | [    2|  10]  4.1319389382E-01  3.6237663943E+01  2.4355680483E+00  Bin  1.0
+       WORHP | [    3|   8]  5.1816495321E-01  2.9657482024E+01  4.7245255298E+00  Bin  1.0
+       WORHP | [    4|  15]  6.7448551347E-01  2.1842228019E+01  1.1671139074E+02  Bin  1.0
+       WORHP | [    5|  14]  8.6086387486E-01  1.6149406918E+01  5.6537270948E+03  Bin  1.0
+       WORHP | [    6|  24]  1.0333609668E+00  7.4482476446E+00  2.2275876789E+05  Bin  1.0
+       WORHP | [    7|  15]  1.2303117332E+00  6.4846499284E+00  3.5676893328E+04  Bin  1.0
+       WORHP | [    8|  17]  1.8172255882E+00  3.1478901450E+00  1.5562415391E+04  Bin  1.0
+       WORHP | [    9|  10]  1.9154095444E+00  1.4464502676E+00  2.1119086886E+03  Bin  1.0
+       WORHP |      ITER           OBJ               CON              sKKT        FLAGS   A
+       WORHP | [   10|  14]  1.9637301348E+00  9.1254491541E-02  4.5821028899E+01  Bin  1.0
+       WORHP | [   11|   2]  1.9630364746E+00  5.8323232923E-04  1.1259214161E-01  Ban  1.0
+       WORHP | [   12|   1]  1.9629809877E+00  1.9713019495E-07  1.5072153562E-04  Bfa  1.0
+       WORHP | [   13|   1]  1.9628658271E+00  1.8261383044E-06  2.4858934664E-04  Baa  1.0
+       WORHP | [   14|   1]  1.9625280750E+00  1.5582351842E-05  5.6157949595E-04  Baa  1.0
+       WORHP | [   15|   5]  1.9615367923E+00  1.3452979726E-04  1.8521126989E-03  Ban  1.0
+       WORHP | [   16|   2]  1.9552500753E+00  1.3774578184E-03  1.4037888518E-02  Bin  1.0
+       WORHP | [   17|   1]  1.9263449893E+00  1.4644647108E-02  2.7381326891E-02  Bin  1.0
+       WORHP | [   18|   7]  1.8641511715E+00  4.6582418446E-02  3.3570017421E-02  Bin  1.0
+       WORHP | [   19|  12]  1.8019241335E+00  9.6732321774E-02  8.2009312894E-02  Bin  1.0
+       WORHP |      ITER           OBJ               CON              sKKT        FLAGS   A
+       WORHP | [   20|  13]  1.7828089940E+00  4.5431457695E-01  5.6408524013E-02  Bin  1.0
+       WORHP | [   21|   1]  1.7595576983E+00  1.1898834027E+00  1.7215123328E-01  Bin  1.0
+       WORHP | [   22|   1]  1.6162599295E+00  3.8998794857E-02  6.3343564112E-01  Bin  1.0
+       WORHP | [   23|   1]  1.3072457052E+00  1.0827908123E+00  2.5778129705E+00  Bin  1.0
+       WORHP | [   24|   1]  1.3031550176E+00  8.9827362301E-01  1.7935533077E-01  Bin  8.0
+       WORHP | [   25|   1]  1.2795048170E+00  2.0576326282E-01  9.2673054698E-03  Bin  1.0
+       WORHP | [   26|   1]  1.2796388908E+00  3.2725159847E-04  7.3145361390E-05  Baa  1.0
+       WORHP | [   27|   1]  1.2796348477E+00  1.0654792071E-07  1.6137307659E-05  Bfa  1.0
+       WORHP | [   28|   1]  1.2796211654E+00  7.8103779968E-06  4.1584479435E-05  Baa  1.0
+       WORHP | [   29|   1]  1.2795601414E+00  4.7445329367E-04  4.8810240125E-04  Baa  1.0
+       WORHP |      ITER           OBJ               CON              sKKT        FLAGS   A
+       WORHP | [   30|   1]  1.2795643702E+00  1.9808790697E-07  1.9031398342E-05  Bfa  1.0
+       WORHP | [   31|   1]  1.2795636773E+00  2.9078325650E-06  4.8773431420E-05  Baa  1.0
+       WORHP | [   32|   1]  1.2795636759E+00  3.9308865496E-08  3.9848330612E-06  Bfa  1.0
+       WORHP | [   33|   1]  1.2795636762E+00  9.4210716312E-10  6.6957375953E-07  Bfo  1.0
+       WORHP |  Final values after iteration 33:
+           | |  Final objective value .............  1.2795636762E+00
+           | |  Final constraint violation ........  9.4210716312E-10
+           | |  Final KKT conditions ..............  6.6957375953E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+  TransWORHP | TransWORHP statistics
+  TransWORHP |       calls to WORHP
+  TransWORHP |                                          count   Real Time    CPU Time
+           | |                      WORHP                 321       0.000       0.000 [----
+           | |                      Output                 35       0.312       0.015 [####
+           | |                      Objective F          2628       0.000       0.000 [----
+           | |                      Constraints G         900       0.000       0.000 [----
+           | |                      Gradient DF             0       0.000       0.000 [----
+           | |                      Jacobian DG             0       0.000       0.000 [----
+           | |                      Hessian HM              0       0.000       0.000 [----
+           | |                      Finite Diff          3492       0.000       0.000 [----
+           | |                      TransWORHP              1       0.312       0.015 [####
+           | |
+  TransWORHP |       calls in OCP                                f     df/d(x,u)   df/dp
+  TransWORHP |                      objective function        2628         0         0
+  TransWORHP |                      ode system                9000         0         0
+  TransWORHP |                      boundary constraints         0         0         0
+  TransWORHP |                      state constraints            0         0         0
+  TransWORHP |                      integration                  0         0         0
+  TransWORHP | -------------------------------------------------------
+  TransWORHP |  This is TransWORHP 0.1-r13701b4, the OCP solver for WORHP,
+  TransWORHP |          developed by University of Bremen.
+  TransWORHP | -------------------------------------------------------
+  TransWORHP | Using Trapez discretization
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+     Hessian | (structure=3) Using ode blocks
+     Hessian | (values=0) Calculating 2nd derivative of F + mu*G
+  TransWORHP | -------------------------------------------------------
+  TransWORHP |  This is TransWORHP 0.1-r13701b4, the OCP solver for WORHP,
+  TransWORHP |          developed by University of Bremen.
+  TransWORHP | -------------------------------------------------------
+  TransWORHP | Using Trapez discretization
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+     Hessian | (structure=3) Using ode blocks
+     Hessian | (values=0) Calculating 2nd derivative of F + mu*G
+     Butcher | Tableau DormandPrince
+     Butcher |      0.0000000 |
+           | |      0.2000000 |      0.2000000
+           | |      0.3000000 |      0.0750000     0.2250000
+           | |      0.8000000 |      0.9777778    -3.7333333     3.5555556
+           | |      0.8888889 |      2.9525987   -11.5957933     9.8228929    -0.2908093
+           | |      1.0000000 |      2.8462753   -10.7575758     8.9064227     0.2784091
+           | |      1.0000000 |      0.0911458     0.0000000     0.4492363     0.6510417
+           | | ---------------+------------------------------------------------------------
+           | |                |      0.0899132     0.0000000     0.4534891     0.6140625
+           | |                |      0.0911458     0.0000000     0.4492363     0.6510417
+           | |
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 14:
+           | |  Final objective value .............  1.7367479307E+00
+           | |  Final constraint violation ........  8.9110604180E-08
+           | |  Final KKT conditions ..............  8.9332647737E-10
+           | |  Successful termination: Optimal Solution Found.
+     Butcher | Tableau DormandPrince
+     Butcher |      0.0000000 |
+           | |      0.2000000 |      0.2000000
+           | |      0.3000000 |      0.0750000     0.2250000
+           | |      0.8000000 |      0.9777778    -3.7333333     3.5555556
+           | |      0.8888889 |      2.9525987   -11.5957933     9.8228929    -0.2908093
+           | |      1.0000000 |      2.8462753   -10.7575758     8.9064227     0.2784091
+           | |      1.0000000 |      0.0911458     0.0000000     0.4492363     0.6510417
+           | | ---------------+------------------------------------------------------------
+           | |                |      0.0899132     0.0000000     0.4534891     0.6140625
+           | |                |      0.0911458     0.0000000     0.4492363     0.6510417
+           | |
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 16:
+           | |  Final objective value .............  1.7336799881E+00
+           | |  Final constraint violation ........  1.5473818593E-07
+           | |  Final KKT conditions ..............  3.9135858189E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 22:
+           | |  Final objective value .............  1.8002921707E+00
+           | |  Final constraint violation ........  2.8865676460E-08
+           | |  Final KKT conditions ..............  2.2535591645E-08
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 24:
+           | |  Final objective value .............  1.9156864641E+00
+           | |  Final constraint violation ........  7.3597425930E-07
+           | |  Final KKT conditions ..............  2.3587901121E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 33:
+           | |  Final objective value .............  1.9818257708E+00
+           | |  Final constraint violation ........  1.0507795078E-08
+           | |  Final KKT conditions ..............  2.6085127761E-09
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 34:
+           | |  Final objective value .............  1.5204670076E+00
+           | |  Final constraint violation ........  4.8998022040E-07
+           | |  Final KKT conditions ..............  9.8485402548E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 14:
+           | |  Final objective value .............  1.0278317210E+00
+           | |  Final constraint violation ........  4.9179549322E-10
+           | |  Final KKT conditions ..............  6.1751983544E-08
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 14:
+           | |  Final objective value .............  7.5481807166E-01
+           | |  Final constraint violation ........  4.2419817659E-12
+           | |  Final KKT conditions ..............  6.8801520366E-11
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 16:
+           | |  Final objective value .............  6.1602602440E-01
+           | |  Final constraint violation ........  1.4904771861E-11
+           | |  Final KKT conditions ..............  3.4896547870E-09
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 20:
+           | |  Final objective value .............  5.7800584177E-01
+           | |  Final constraint violation ........  1.2231505037E-07
+           | |  Final KKT conditions ..............  2.8291338694E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 17:
+           | |  Final objective value .............  5.9334246204E-01
+           | |  Final constraint violation ........  1.4095376059E-07
+           | |  Final KKT conditions ..............  2.0620117093E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 19:
+           | |  Final objective value .............  6.1497104235E-01
+           | |  Final constraint violation ........  1.4546527494E-07
+           | |  Final KKT conditions ..............  9.0123953380E-08
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 23:
+           | |  Final objective value .............  6.8947630661E-01
+           | |  Final constraint violation ........  3.1866564387E-09
+           | |  Final KKT conditions ..............  3.8096411372E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 30:
+           | |  Final objective value .............  8.0927168741E-01
+           | |  Final constraint violation ........  3.5798849982E-08
+           | |  Final KKT conditions ..............  1.1789316024E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 17:
+           | |  Final objective value .............  9.6708214550E-01
+           | |  Final constraint violation ........  1.6339545272E-09
+           | |  Final KKT conditions ..............  5.2399463431E-08
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 27:
+           | |  Final objective value .............  1.0567219047E+00
+           | |  Final constraint violation ........  2.1872486877E-09
+           | |  Final KKT conditions ..............  2.8810443443E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 33:
+           | |  Final objective value .............  1.1192810702E+00
+           | |  Final constraint violation ........  1.0207542200E-08
+           | |  Final KKT conditions ..............  4.5191738449E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 18:
+           | |  Final objective value .............  8.4962968334E-01
+           | |  Final constraint violation ........  5.1287917713E-07
+           | |  Final KKT conditions ..............  1.7696810291E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 32:
+           | |  Final objective value .............  4.5691441470E-01
+           | |  Final constraint violation ........  1.0658682159E-08
+           | |  Final KKT conditions ..............  1.3385081783E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 23:
+           | |  Final objective value .............  2.2297785932E-01
+           | |  Final constraint violation ........  1.4940348720E-08
+           | |  Final KKT conditions ..............  3.1274843010E-08
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 22:
+           | |  Final objective value .............  1.2689700031E-01
+           | |  Final constraint violation ........  8.3853384306E-10
+           | |  Final KKT conditions ..............  4.5718345134E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 13:
+           | |  Final objective value .............  9.9505203954E-02
+           | |  Final constraint violation ........  3.8044730444E-01
+           | |  Final KKT conditions ..............  4.0981711550E+03
+           | |  Unsuccessful termination: Converged to local point of infeasibility.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 44:
+           | |  Final objective value .............  1.0353913351E-01
+           | |  Final constraint violation ........  1.8801398149E+00
+           | |  Final KKT conditions ..............  2.1055107879E+05
+           | |  Unsuccessful termination: Converged to local point of infeasibility.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 6:
+           | |  Final objective value .............  1.7315130655E-01
+           | |  Final constraint violation ........  8.3386977323E-09
+           | |  Final KKT conditions ..............  1.7214238333E-14
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 5:
+           | |  Final objective value .............  9.4338128536E-02
+           | |  Final constraint violation ........  1.0049294730E-11
+           | |  Final KKT conditions ..............  1.3066237353E-10
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 5:
+           | |  Final objective value .............  5.1858263620E-02
+           | |  Final constraint violation ........  1.3091568299E-07
+           | |  Final KKT conditions ..............  4.5451366285E-12
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  3.0545525484E-02
+           | |  Final constraint violation ........  1.2618074004E-07
+           | |  Final KKT conditions ..............  7.7185304122E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  2.1058502332E-02
+           | |  Final constraint violation ........  3.9801233420E-09
+           | |  Final KKT conditions ..............  1.2548966033E-10
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  1.3601120168E-02
+           | |  Final constraint violation ........  3.7711356260E-10
+           | |  Final KKT conditions ..............  9.5002477928E-13
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  8.7777712900E-03
+           | |  Final constraint violation ........  1.6394091640E-10
+           | |  Final KKT conditions ..............  1.3388710922E-13
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  5.4740073752E-03
+           | |  Final constraint violation ........  6.6963884437E-10
+           | |  Final KKT conditions ..............  1.3629518689E-13
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  3.8245388888E-03
+           | |  Final constraint violation ........  7.2757001646E-08
+           | |  Final KKT conditions ..............  1.4390366975E-13
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  2.2188966913E-03
+           | |  Final constraint violation ........  7.5101896924E-11
+           | |  Final KKT conditions ..............  1.3125018829E-13
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  1.5373872601E-03
+           | |  Final constraint violation ........  3.3752547979E-10
+           | |  Final KKT conditions ..............  4.2403761297E-13
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  8.4840412917E-04
+           | |  Final constraint violation ........  4.3236428326E-11
+           | |  Final KKT conditions ..............  2.0447121037E-13
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  5.7938145407E-04
+           | |  Final constraint violation ........  2.0888069052E-10
+           | |  Final KKT conditions ..............  3.7470609289E-13
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  3.2550988778E-04
+           | |  Final constraint violation ........  2.2277353573E-10
+           | |  Final KKT conditions ..............  3.1008927099E-13
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  2.0479875712E-04
+           | |  Final constraint violation ........  1.8986064110E-10
+           | |  Final KKT conditions ..............  2.0449874939E-13
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  1.5596700873E-04
+           | |  Final constraint violation ........  5.4678408856E-08
+           | |  Final KKT conditions ..............  1.9215473858E-12
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  1.2439836939E-04
+           | |  Final constraint violation ........  6.8376554065E-08
+           | |  Final KKT conditions ..............  6.6731967845E-13
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  1.1309076299E-04
+           | |  Final constraint violation ........  1.6784951768E-07
+           | |  Final KKT conditions ..............  8.8858069681E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  1.0664459635E-04
+           | |  Final constraint violation ........  1.2427262526E-07
+           | |  Final KKT conditions ..............  4.8268983653E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  1.0287589698E-04
+           | |  Final constraint violation ........  7.8508093273E-08
+           | |  Final KKT conditions ..............  2.7960199248E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  9.7483854811E-05
+           | |  Final constraint violation ........  5.1969030877E-08
+           | |  Final KKT conditions ..............  1.2697896306E-07
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  9.2981730809E-05
+           | |  Final constraint violation ........  3.1407245605E-08
+           | |  Final KKT conditions ..............  6.8157418591E-08
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  8.4050290740E-05
+           | |  Final constraint violation ........  2.3915626372E-09
+           | |  Final KKT conditions ..............  5.6794084357E-11
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 3:
+           | |  Final objective value .............  7.7914599638E-05
+           | |  Final constraint violation ........  1.0648272067E-08
+           | |  Final KKT conditions ..............  1.5139858507E-09
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  6.6764534139E-05
+           | |  Final constraint violation ........  3.9160343583E-10
+           | |  Final KKT conditions ..............  1.3710130622E-08
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  5.6203445103E-05
+           | |  Final constraint violation ........  3.3426889104E-09
+           | |  Final KKT conditions ..............  1.6390440749E-09
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  4.9430210205E-05
+           | |  Final constraint violation ........  1.9177575864E-09
+           | |  Final KKT conditions ..............  6.8822474857E-10
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  4.3884604730E-05
+           | |  Final constraint violation ........  1.2027460998E-09
+           | |  Final KKT conditions ..............  3.2637097008E-10
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  3.4170086159E-05
+           | |  Final constraint violation ........  4.4940583508E-12
+           | |  Final KKT conditions ..............  8.3794224618E-11
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  2.9477418775E-05
+           | |  Final constraint violation ........  2.2105009626E-12
+           | |  Final KKT conditions ..............  3.8387733784E-11
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  2.1858953164E-05
+           | |  Final constraint violation ........  6.2440804853E-13
+           | |  Final KKT conditions ..............  1.1769390511E-11
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  1.8366848944E-05
+           | |  Final constraint violation ........  3.0115643696E-13
+           | |  Final KKT conditions ..............  5.6656396805E-12
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  1.3298889860E-05
+           | |  Final constraint violation ........  8.9175518573E-14
+           | |  Final KKT conditions ..............  2.2008071051E-12
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  1.0898750741E-05
+           | |  Final constraint violation ........  4.4225991938E-14
+           | |  Final KKT conditions ..............  1.2855824988E-12
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  7.6250134768E-06
+           | |  Final constraint violation ........  3.5897900897E-14
+           | |  Final KKT conditions ..............  4.7990605856E-13
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  6.1058102720E-06
+           | |  Final constraint violation ........  8.9147431384E-14
+           | |  Final KKT conditions ..............  2.6031362410E-13
+           | |  Successful termination: Optimal Solution Found.
+             |
+             |
+       WORHP | ReadParams: Used parameter file worhp.xml
+       WORHP | * Read 225/225 parameters.
+       CHECK | Check NLP Constraints
+       WORHP |  Final values after iteration 2:
+           | |  Final objective value .............  5.0154388196E-06
+           | |  Final constraint violation ........  1.3016929885E-13
+           | |  Final KKT conditions ..............  1.3266925031E-13
+           | |  Successful termination: Optimal Solution Found.
+

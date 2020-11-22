@@ -1,0 +1,62 @@
+1: ideales Modell, nur Endpunkt betrachtet, vereinfachte Energie als Gütemaß
+2: ideales Modell, nur Endpunkt betrachtet, Energie * Zustand als Gütemaß --> kein Erfolg
+3: ideales Modell, nur Endpunkt betrachtet, Energie als Gütemaß
+4: ideales Modell, nur Endpunkt betrachtet, Energie + Zustand als Gütemaß
+5: ideales Modell, 3 Punkte betrachtet, Energie + Zustand als Gütemaß
+6: Modellfehler, 3 Punkte betrachtet, Energie + Zustand als Gütemaß
+7: identisch zu 6, Export angepasst für neue Animation, Bugfix
+8: identisch zu 7, gemeinsamer Folder für beide Pendel --> kein Erfolg
+9: Reduktion n_dis über Pendellage
+10: echtes Pendel im Millisekundenraster -> kein Eingriff möglich / Step falsche Ergebnisse
+11: echtes Pendel im Millisekundenraster -> Workaround, nur je 2ms modelliert, zu langsam
+12: wie 9, + delta_0 = 0.84 ms, + n_dis vor Reinit -> "richtige" Optimierung
+13: wie 12, mehr Stellgröße erlaubt
+13_Arma: wie 13 mit Armadillo -> keine Änderung
+
+14: Optimierung der diskreten Zeitpunkte, beste von 5 -> Bug in Reihenfolge (?), "Too Small"
+15: wie 14, Median von 11 -> "Too small"
+
+16: Sprung zur Echtzeit-Zustands-Regelung mit Hysterese
+17: wie zuvor, MPC kennt Sprung
+18: Sprung zur Echtzeit-Zustands-Regelung+MPC mit Hysterese --> kein Erfolg
+
+19: wie 13 + kleine Sachen korrigiert, Vorziehen der Startschätzung (Precalc) ermöglicht
+--> großer Aufwand, kaum sichtbare Verbesserung --> trotzdem so lassen, für echten Prüfstand
+Außerdem ab hier WORHP-Toleranzen stark vergrößert --> wirkt sich auf alle Vorgänger aus
+
+20: wie 19, nur Endpunkt betrachtet, letzten MPC-Lauf interpoliert in Startschätzung der nächsten
+Optimierung integriert --> 5% schneller
+
+21: doppelte Schleife, um gute Stützpunkte zu wählen
+22: Ergebnis dieser Optimierung
+23: Feinoptimierung
+24: PT2-Wagenmodell real, PT1-Modell optim --> schlecht, Zeitpunkte besser wählen?
+25: Bugfixes: - Textausgabe Simu im Precalc-Fall aus Zeitmessung heraus gezogen
+	- Integration des echten Systems im Precalc-Fall bei weiter auseinanderliegenden Stützpunkten korrigiert
+	Außerdem: - Startwerte echtes System bekommen eigene Variable -> übersichtlicher
+	- Schätzung der Berechnungszeit bekommt Grenzen (*0.5 / *1.5)
+	- Precalc-Zeitpunkt bekommt Grenze (*0.5)
+	- 2 Optimierungen in einer Schätzdauer (vorletzter Lauf) abgeschlossen? Dann warten.	
+26: wie 25 mit Bugfixes:
+	- Schleifenende ph_optim.n_dis statt ph_real/ph_simu.n_dis, da in Steuerfolge (ph_optim.u -> temp_u) nicht mehr sinnvolle Elemente enthalten sind
+	- ph_simu.X[ph_real.u_index(...)] -> ph_simu.X[ph_simu.u_index(...)] korrigiert
+	Optimierung
+27: Ergebnis der Optimierung
+
+	
+Test: ?
+Test2/3: Reihenfolge Reinit/Warmstart/Loop/n_dis=... auf Erfolg und Richtigkeit testen
+Test4: Optimierungszeit in "allen" Zuständen testen
+Test4_Arma: gleich Test4 mit Armadillo -> kein Geschwindigkeitsgewinn
+
+
+Schleifen-Tests:
+- folder.Loop -> lauffäuhig, start[] unberücksichtigt
+- Warmstart, folder.Loop -> unverändert
+- folder.Init, folder.Loop -> stürzt ab
+- folder.Reinit, folder.Loop -> läuft
+- Warmstart, folder.Reinit, folder.Loop -> unverändert
+- folder.Reinit, Warmstart, folder.Loop -> stürzt ab
+
+- n_dis verringern, folder.Reinit, folder.Loop, n_dis zurück ändern -> gleich wie n_dis generell niedriger
+- folder.Reinit, n_dis verringern, folder.Loop, n_dis zurück ändern -> falsche Ergebnisse
